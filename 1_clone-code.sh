@@ -9,7 +9,7 @@
 CODE_ROOT=/vagrant
 WORKING_DIR_NAME=eurorack-modules
 DEV_ENV="${CODE_ROOT}/${WORKING_DIR_NAME}"
-MI_REPO="https://github.com/pichenettes/eurorack.git"
+MI_REPO="https://github.com/rouxleandre/eurorack.git"
 
 # test if the dev_env directory already exists
 if [ -d "$DEV_ENV" ]; then
@@ -24,7 +24,7 @@ else
         # Get from a clone of the custom repo.
         git clone $USER_GITHUB_URL $WORKING_DIR_NAME
         cd $DEV_ENV
-        git remote add pichenettes $MI_REPO
+        git remote add rouxleandre $MI_REPO
     else
         # Get from the original repo.
         git clone $MI_REPO $WORKING_DIR_NAME

@@ -27,11 +27,11 @@ Then **log out and log back in** to make sure the group change takes effect.
 
 First, clone this repository:
 
-	git clone https://github.com/pichenettes/mutable-dev-environment.git
+	git clone https://github.com/rouxleandre/mutable-dev-environment.git
 
-or download: 
+or download:
 
-	https://github.com/pichenettes/mutable-dev-environment/archive/master.zip
+	https://github.com/rouxleandre/mutable-dev-environment/archive/master.zip
 
 To start the VM, open a terminal in the `mutable-dev-environment` directory with the Vagrantfile and run:
 
@@ -91,7 +91,7 @@ for ARM projects using a JTAG adapter. Similarly for AVR projects, you can use
 
 Any further calls to `make` will then automatically use these settings. To make them permanent, add the exports to the end of `~/.bashrc`.
 
-See [stmlib/makefile.inc](https://github.com/pichenettes/stmlib/blob/master/makefile.inc#L29) and [avrlib/makefile.mk](https://github.com/pichenettes/avril/blob/master/makefile.mk#L16) for more options that can be customized.
+See [stmlib/makefile.inc](https://github.com/rouxleandre/stmlib/blob/master/makefile.inc#L29) and [avrlib/makefile.mk](https://github.com/rouxleandre/avril/blob/master/makefile.mk#L16) for more options that can be customized.
 
 Another way (e.g. to test if settings are correct) is to just specify the value in the call to `make`:
 
@@ -102,4 +102,4 @@ If you want to build code from your own github fork, you can specify the reposit
 
 	USER_GITHUB_URL=https://github.com/<username>/eurorack.git vagrant up
 
-The Mutable Instruments' repository is automatically added as the git remote `pichenettes`.
+The Mutable Instruments' repository is automatically added as the git remote `rouxleandre`.
